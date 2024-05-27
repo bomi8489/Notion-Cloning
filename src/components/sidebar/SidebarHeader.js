@@ -10,7 +10,7 @@ export default function SidebarHeader({ parent, closeSideNavbar, openSideNavbar 
     sidebarHeader.innerHTML = `
       <div id="header-user-profile">
         <div>
-          <img src="/src/images/profile.jpg" alt="profile" />
+          <img src="./images/profile.jpg" alt="profile" />
         </div>
         <div><b>기범</b>의 <b>Notion</b></div>
       </div>
