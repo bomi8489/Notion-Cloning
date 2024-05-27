@@ -10,7 +10,7 @@ export default function CreateDocumentList(title, id = null) {
   const $toggleAndTitle = document.createElement('div');
 
   const $toggleDocument = document.createElement('div');
-  $toggleDocument.textContent = '>';
+  $toggleDocument.textContent = '〉';
   $toggleDocument.id = 'toggle-child-document';
 
   const $documentTitle = document.createElement('div');
@@ -23,15 +23,15 @@ export default function CreateDocumentList(title, id = null) {
   const $deleteAddButton = document.createElement('div');
 
   const $deleteButton = document.createElement('div');
-  $deleteButton.textContent = 'x';
+  $deleteButton.textContent = '✕';
   $deleteButton.id = 'delete-document-button';
 
   const $addChildButton = document.createElement('div');
-  $addChildButton.textContent = '+';
+  $addChildButton.textContent = '✛';
   $addChildButton.id = 'add-child-document-button';
 
-  $deleteAddButton.appendChild($addChildButton);
   $deleteAddButton.appendChild($deleteButton);
+  $deleteAddButton.appendChild($addChildButton);
 
   $parentDocument.appendChild($toggleAndTitle);
   $parentDocument.appendChild($deleteAddButton);
